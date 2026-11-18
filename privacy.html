@@ -1,22 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Caryna Field - 4D Construction</title>
-  <style>body{font-family:system-ui,-apple-system,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;line-height:1.6;color:#222}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Caryna Field - 4D Construction</title>
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;line-height:1.6;color:#222}h2{margin-top:1.6em}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top}hr{margin:3em 0}</style>
 </head>
 <body>
-  <h1>Privacy Policy — Caryna Field - 4D Construction</h1>
-  <p><strong>Effective Date:</strong> November 2026</p>
-  <p><strong>Developer:</strong> Caryna Studio (Nguyễn Trọng Gôn)</p>
-  <h2>1. Offline-First Architecture & Local Storage</h2>
-  <p>Caryna Field - 4D Construction is designed with an offline-first architecture. All construction schedules, zones, tasks, PDF/Excel imports, OCR scans, and project logs are stored locally on your device inside an encrypted/sandboxed database. We do not automatically upload your proprietary construction data to external servers.</p>
-  <h2>2. Camera & File Access Permissions</h2>
-  <p>The app requests access to your device camera solely for on-device optical character recognition (ML Kit OCR) and site documentation, and file storage access solely to import construction schedules or export user-initiated backups (.ssb) and reports (PDF/Word/Excel).</p>
-  <h2>3. In-App Purchases & Subscriptions</h2>
-  <p>Pro subscriptions and lifetime licenses are processed securely through Google Play Billing. We do not collect or store your credit card or banking details.</p>
-  <h2>4. Contact Us</h2>
-  <p>For privacy inquiries, please contact: <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a></p>
+
+<h1 id="en">Privacy Policy — Caryna Field - 4D Construction</h1>
+<p><a href="#vi">Tiếng Việt ↓</a></p>
+<p><strong>Effective date:</strong> November 2026 · <strong>Developer:</strong> Caryna Studio (Nguyễn Trọng Gôn) · <strong>App:</strong> com.carynaphuquoc.carynafield</p>
+
+<h2>1. Offline-first architecture and local storage</h2>
+<p>Caryna Field is designed to work offline. Construction schedules, zones, tasks, PDF/Excel imports, OCR scans, signed audit-ledger entries and project logs are stored on your device in the app's private database. We do not automatically upload your construction data to external servers, and the app does not contain advertising or analytics SDKs.</p>
+
+<h2>2. Data and device permissions used</h2>
+<table>
+<tr><th>Item</th><th>What it is used for</th><th>Where it goes</th></tr>
+<tr><td><strong>Precise location (GPS)</strong><br>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</td>
+<td>Optional and <strong>off by default</strong>. If you switch it on, the app reads your position <strong>only at the moment you sign</strong> an acceptance / audit entry (Ed25519 digital-signature ledger) and attaches it to that entry as evidence. The app never tracks your location in the background.</td>
+<td>Stored on your device in the project database with the signed entry. It is not sent to advertising, analytics or other third parties. If you use a workspace that synchronises with a server, signed entries of that workspace may be transmitted to that workspace's server. You can switch it off at any time in the app and in Android settings.</td></tr>
+<tr><td><strong>Google Sign-In</strong></td>
+<td>Optional. When you choose to sign in with Google, the app receives only your <strong>email address, display name and Google account ID</strong> (scope <code>email</code>) to identify you; there is no server account behind it. You can instead use the app without any account ("use now without an account").</td>
+<td>Kept in the app's encrypted secure storage on your device. Not used for advertising.</td></tr>
+<tr><td><strong>Biometric / device-credential check</strong><br>USE_BIOMETRIC</td>
+<td>Optional confirmation that the person signing is present: before a digital signature is applied, the app asks Android to verify your fingerprint, face, or device PIN/pattern. This is handled entirely by the Android operating system.</td>
+<td>The app receives only a yes/no result and <strong>never receives or stores biometric data</strong>.</td></tr>
+<tr><td><strong>Notifications</strong><br>POST_NOTIFICATIONS</td>
+<td>Local notifications on the device, for example schedule reminders and synchronisation status. This version does not use remote (push) notification services.</td>
+<td>Generated on the device; no notification content is sent to us.</td></tr>
+<tr><td><strong>Camera</strong><br>CAMERA</td>
+<td>Only for on-device text recognition (ML Kit OCR) and site photo documentation.</td>
+<td>Processed on the device; photos stay in app storage until you export or delete them.</td></tr>
+<tr><td><strong>Files</strong></td>
+<td>Only to import schedules you choose, and to export backups (.ssb) and reports (PDF/Word/Excel) you request, through the Android file picker / share sheet.</td>
+<td>You decide where exported files go.</td></tr>
+<tr><td><strong>Network state</strong><br>INTERNET / ACCESS_NETWORK_STATE</td>
+<td>To check connectivity, reach Google Play Billing and Google Sign-In, and synchronise only if you use a server-backed workspace.</td>
+<td>—</td></tr>
+</table>
+
+<h2>3. In-app purchases and subscriptions</h2>
+<p>Pro subscriptions and lifetime licenses are processed by Google Play Billing. We do not collect or store your card or bank details. Purchase signatures are verified on your device.</p>
+
+<h2>4. Retention and deletion</h2>
+<p>Data stays on your device until you delete it. In the app, open Settings and choose to erase all local data (this removes projects, ledger, photos, documents, stored sign-in and keys), or clear storage / uninstall in Android settings. See the <a href="account-deletion.html">data deletion page</a>.</p>
+
+<h2>5. Children</h2>
+<p>The app is intended for construction professionals and is not directed to children.</p>
+
+<h2>6. Changes and contact</h2>
+<p>We will update this page and its effective date when practices change. Privacy inquiries: <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a>.</p>
+
+<hr>
+
+<h1 id="vi">Chính sách quyền riêng tư — Caryna Field - 4D Construction</h1>
+<p><a href="#en">English ↑</a></p>
+<p><strong>Ngày hiệu lực:</strong> Tháng 11/2026 · <strong>Nhà phát triển:</strong> Caryna Studio (Nguyễn Trọng Gôn) · <strong>Ứng dụng:</strong> com.carynaphuquoc.carynafield</p>
+
+<h2>1. Kiến trúc ưu tiên ngoại tuyến và lưu trữ cục bộ</h2>
+<p>Caryna Field được thiết kế để hoạt động ngoại tuyến. Tiến độ thi công, khu vực, công tác, tệp PDF/Excel nhập vào, kết quả quét OCR, các mục sổ cái kiểm toán có chữ ký số và nhật ký dự án được lưu trong cơ sở dữ liệu riêng của ứng dụng trên thiết bị của bạn. Chúng tôi không tự động tải dữ liệu công trình của bạn lên máy chủ bên ngoài, và ứng dụng không chứa SDK quảng cáo hay phân tích.</p>
+
+<h2>2. Dữ liệu và quyền thiết bị được sử dụng</h2>
+<table>
+<tr><th>Hạng mục</th><th>Mục đích sử dụng</th><th>Dữ liệu đi đâu</th></tr>
+<tr><td><strong>Vị trí chính xác (GPS)</strong><br>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</td>
+<td>Tùy chọn và <strong>mặc định tắt</strong>. Nếu bạn bật, ứng dụng chỉ đọc vị trí <strong>tại thời điểm bạn ký</strong> xác nhận nghiệm thu / kiểm toán (sổ cái chữ ký số Ed25519) và gắn vào mục đó làm bằng chứng. Ứng dụng không bao giờ theo dõi vị trí ở chế độ nền.</td>
+<td>Lưu cục bộ trên thiết bị trong cơ sở dữ liệu dự án cùng mục đã ký. Không gửi cho bên quảng cáo, phân tích hay bên thứ ba khác. Nếu bạn dùng không gian làm việc đồng bộ với máy chủ, các mục đã ký của không gian đó có thể được gửi tới máy chủ của không gian đó. Bạn có thể tắt bất cứ lúc nào trong ứng dụng và trong Cài đặt Android.</td></tr>
+<tr><td><strong>Đăng nhập Google (Google Sign-In)</strong></td>
+<td>Tùy chọn. Khi bạn chọn đăng nhập bằng Google, ứng dụng chỉ nhận <strong>địa chỉ email, tên hiển thị và mã tài khoản Google</strong> (phạm vi <code>email</code>) để định danh; không có tài khoản máy chủ phía sau. Bạn có thể dùng ứng dụng mà không cần tài khoản ("Dùng ngay không cần tài khoản").</td>
+<td>Lưu trong kho bảo mật được mã hóa của ứng dụng trên thiết bị. Không dùng cho quảng cáo.</td></tr>
+<tr><td><strong>Xác thực sinh trắc học / khóa thiết bị</strong><br>USE_BIOMETRIC</td>
+<td>Tùy chọn, dùng để xác nhận người ký đang có mặt: trước khi áp dụng chữ ký số, ứng dụng nhờ Android xác minh vân tay, khuôn mặt hoặc mã PIN/hình mở khóa của máy. Việc này do hệ điều hành Android xử lý hoàn toàn.</td>
+<td>Ứng dụng chỉ nhận kết quả đạt/không đạt và <strong>không bao giờ nhận hay lưu dữ liệu sinh trắc học</strong>.</td></tr>
+<tr><td><strong>Thông báo</strong><br>POST_NOTIFICATIONS</td>
+<td>Thông báo cục bộ trên thiết bị, ví dụ nhắc tiến độ và trạng thái đồng bộ. Phiên bản này không dùng dịch vụ thông báo đẩy từ xa.</td>
+<td>Tạo ngay trên thiết bị; không có nội dung thông báo nào được gửi cho chúng tôi.</td></tr>
+<tr><td><strong>Máy ảnh</strong><br>CAMERA</td>
+<td>Chỉ để nhận dạng chữ trên thiết bị (ML Kit OCR) và chụp ảnh hiện trường.</td>
+<td>Xử lý trên thiết bị; ảnh nằm trong bộ nhớ ứng dụng cho đến khi bạn xuất hoặc xóa.</td></tr>
+<tr><td><strong>Tệp</strong></td>
+<td>Chỉ để nhập tiến độ bạn chọn và xuất bản sao lưu (.ssb), báo cáo (PDF/Word/Excel) bạn yêu cầu, qua trình chọn tệp / bảng chia sẻ của Android.</td>
+<td>Bạn quyết định nơi lưu tệp đã xuất.</td></tr>
+<tr><td><strong>Trạng thái mạng</strong><br>INTERNET / ACCESS_NETWORK_STATE</td>
+<td>Để kiểm tra kết nối, gọi Google Play Billing và Google Sign-In, và chỉ đồng bộ nếu bạn dùng không gian làm việc có máy chủ.</td>
+<td>—</td></tr>
+</table>
+
+<h2>3. Mua trong ứng dụng và gói đăng ký</h2>
+<p>Gói Pro và giấy phép trọn đời được xử lý bởi Google Play Billing. Chúng tôi không thu thập hay lưu thông tin thẻ hoặc ngân hàng của bạn. Chữ ký giao dịch được xác minh trên thiết bị của bạn.</p>
+
+<h2>4. Lưu giữ và xóa dữ liệu</h2>
+<p>Dữ liệu ở lại trên thiết bị cho đến khi bạn xóa. Trong ứng dụng, mở Cài đặt và chọn xóa toàn bộ dữ liệu cục bộ (xóa dự án, sổ cái, ảnh, tài liệu, thông tin đăng nhập và khóa đã lưu), hoặc xóa bộ nhớ / gỡ ứng dụng trong Cài đặt Android. Xem <a href="account-deletion.html">trang xóa dữ liệu</a>.</p>
+
+<h2>5. Trẻ em</h2>
+<p>Ứng dụng dành cho người làm nghề xây dựng, không hướng tới trẻ em.</p>
+
+<h2>6. Thay đổi và liên hệ</h2>
+<p>Chúng tôi sẽ cập nhật trang này và ngày hiệu lực khi thực tiễn thay đổi. Liên hệ về quyền riêng tư: <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a>.</p>
+
 </body>
 </html>
